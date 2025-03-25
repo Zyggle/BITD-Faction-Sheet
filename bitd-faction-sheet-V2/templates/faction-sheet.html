@@ -1,0 +1,40 @@
+<section class="faction-sheet">
+  {{#each factions as |faction category|}}
+  <div class="faction-category">
+    <h2>{{capitalize category}}</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Tier</th>
+          <th>Hold</th>
+          <th>Relationship</th>
+          <th>Assets</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each faction as |entry index|}}
+        <tr>
+          <td><input type="text" class="faction-input" data-category="{{category}}" data-index="{{index}}" data-field="name" value="{{entry.name}}"></td>
+          <td><input type="number" class="faction-input" data-category="{{category}}" data-index="{{index}}" data-field="tier" value="{{entry.tier}}"></td>
+          <td><input type="text" class="faction-input" data-category="{{category}}" data-index="{{index}}" data-field="hold" value="{{entry.hold}}"></td>
+          <td>
+            <select class="faction-input" data-category="{{category}}" data-index="{{index}}" data-field="relationship">
+              <option value="Allied" {{#ifEquals entry.relationship "Allied"}}selected{{/ifEquals}}>Allied</option>
+              <option value="Friendly" {{#ifEquals entry.relationship "Friendly"}}selected{{/ifEquals}}>Friendly</option>
+              <option value="Neutral" {{#ifEquals entry.relationship "Neutral"}}selected{{/ifEquals}}>Neutral</option>
+              <option value="Rival" {{#ifEquals entry.relationship "Rival"}}selected{{/ifEquals}}>Rival</option>
+              <option value="War" {{#ifEquals entry.relationship "War"}}selected{{/ifEquals}}>War</option>
+            </select>
+          </td>
+          <td><input type="text" class="faction-input" data-category="{{category}}" data-index="{{index}}" data-field="assets" value="{{entry.assets}}"></td>
+          <td><textarea class="faction-input" data-category="{{category}}" data-index="{{index}}" data-field="notes">{{entry.notes}}</textarea></td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <button type="button" class="add-faction" data-category="{{category}}">+ Add Faction</button>
+  </div>
+  {{/each}}
+</section>

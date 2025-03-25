@@ -1,0 +1,20 @@
+{
+  "name": "bitd-faction-sheet",
+  "title": "Blades in the Dark Faction Sheet",
+  "description": "A custom journal sheet for tracking Blades in the Dark factions.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Your Name",
+      "url": "https://yourwebsite.com"
+    }
+  ],
+  "esmodules": ["scripts/faction-sheet.js"],
+  "styles": ["styles/faction-sheet.css"],
+  "packs": [],
+  "compatibleCoreVersion": "11",
+  "minimumCoreVersion": "9",
+  "manifest": "https://yourwebsite.com/module.json",
+  "download": "https://yourwebsite.com/bitd-faction-sheet.zip",
+  "readme": "https://yourwebsite.com/readme.md"
+}

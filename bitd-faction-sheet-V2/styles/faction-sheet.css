@@ -1,0 +1,56 @@
+/* Blades in the Dark Faction Sheet Styles */
+.faction-sheet {
+  background: #1a1a1a;
+  color: #e0e0e0;
+  font-family: "Garamond", serif;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.faction-category {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #444;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+}
+
+.faction-category h2 {
+  color: #c8ab73;
+  border-bottom: 2px solid #c8ab73;
+  padding-bottom: 5px;
+  font-size: 1.5em;
+}
+
+.faction-category table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.faction-category th, .faction-category td {
+  border: 1px solid #666;
+  padding: 5px;
+  text-align: left;
+}
+
+.faction-input, .faction-category select, .faction-category textarea {
+  background: #333;
+  color: #e0e0e0;
+  border: 1px solid #555;
+  padding: 5px;
+  width: 100%;
+}
+
+.faction-category button {
+  background: #c8ab73;
+  color: #1a1a1a;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.faction-category button:hover {
+  background: #e0c18f;
+}
